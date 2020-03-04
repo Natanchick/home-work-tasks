@@ -10,28 +10,32 @@ public class DistanceConverter {
     @Step
     public double metersToInches(double meters) {
 //        TODO implements result
-        double result = 0.0;
-        return result;
+        double metr = meters;
+        double metrToInches = metr * 39.37;
+        return metrToInches;
     }
 
     @Step
     public double inchesToMeters(double inches) {
 //        TODO implements result
-        double result = 0.0;
-        return result;
+        double inch = inches;
+        double inchToMeters = inch / 39.37;
+        return inchToMeters;
     }
 
     @Step
     public double milesToKilometres(double miles) {
 //        TODO implements result
-        double result = 0.0;
-        return result;
+        double mile = miles;
+        double mileToKilometres = mile * 1.609;
+        return mileToKilometres;
     }
 
     @Step
     public double kilometresToMiles(double kilometres) {
 //        TODO implements result
-        double result = 0.0;
-        return result;
+        double km = kilometres;
+        double kmToMiles = km / 1.609;
+        return kmToMiles;
     }
 }
