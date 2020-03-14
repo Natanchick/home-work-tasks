@@ -9,9 +9,14 @@ public class DiscountCountChecker {
 
     @Step
     public double checkDiscountCount(double price) {
-
-//        TODO implements result
         double result = 0.0;
+
+        if (price > 1000){
+            result = price - price * 0.15 ;
+        }
+        else{
+            result = 0;
+        }
 
         return result;
     }

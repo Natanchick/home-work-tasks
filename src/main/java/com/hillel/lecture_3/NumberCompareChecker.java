@@ -9,9 +9,14 @@ public class NumberCompareChecker {
 
     @Step
     public String getGreatestNumber(int a, int b) {
-
-//        TODO implements result
         String result = "";
+
+        if (a > b || b > a){
+            result = "Number " + Math.max(a, b) + " has greatest value!";
+        }
+        else if (a == b){
+            result = "Numbers " + a + " and " + b + " are equals!";
+        }
 
         return result;
     }

@@ -18,9 +18,8 @@ public class BinaryToDecimalChecker {
 
     @Step
     public int fromBinaryToDecimal(int value) {
-
-//        TODO implements result
         int result = 0;
+
 
         return result;
     }
