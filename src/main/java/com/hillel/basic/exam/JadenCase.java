@@ -1,5 +1,9 @@
 package com.hillel.basic.exam;
 
+import org.apache.commons.lang.WordUtils;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.velocity.runtime.log.NullLogChute;
+
 /**
  * Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013).
  * Jaden is also known for some of his philosophy that he delivers via Twitter.
@@ -18,6 +22,16 @@ package com.hillel.basic.exam;
 public class JadenCase {
 
     public String toJadenCase(String phrase) {
-        return null;
+
+        String result = "";
+
+        if (phrase != null && phrase != "") {
+            result = WordUtils.capitalize(phrase);
+        }
+        else {
+            result = null;
+        }
+
+        return result;
     }
 }
