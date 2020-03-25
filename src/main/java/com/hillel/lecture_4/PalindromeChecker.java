@@ -12,8 +12,12 @@ public class PalindromeChecker {
 
 //        TODO implements result
         boolean result = false;
-
-        return result;
+        for (int i = 0; i < value.length() / 2; ++i) {
+            if (value.charAt(i) != value.charAt(value.length() - i - 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
