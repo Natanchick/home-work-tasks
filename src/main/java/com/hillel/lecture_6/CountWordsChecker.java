@@ -11,10 +11,17 @@ public class CountWordsChecker {
     public int countNumberOfWorld(String sentence) {
 
 //        TODO implements result
-        int result = 0;
 
-        return result;
+        int count = 0;
+        if(sentence.length() != 0){
+            count++;
+            for (int i = 0; i < sentence.length(); i++) {
+                if(sentence.charAt(i) == ' '){
+                    count++;
+                }
+            }
+        }
+
+        return count;
     }
-
-
 }
